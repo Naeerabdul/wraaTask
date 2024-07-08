@@ -1,0 +1,194 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+.row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+.col{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+/*Register Bodx side start*/
+.registerBox , .imgBox{
+    text-align: center;
+}
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.form-container{
+    display: grid;
+}
+input[type="email"], input[type="password"] {
+    width: 115%;
+    margin: auto;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    border: 1px solid #F0EDFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #F0EDFF;
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    opacity: 1; /* Firefox */
+}
+.placeholder{
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+}
+.placeholder img{
+    width: 18px;
+}
+.form-container div{
+    position: relative;
+}
+.form-container .registerInputs{
+    position: relative;
+    left:-20px
+}
+.form-container .placeholder{
+    position: absolute;
+    top: 25%;
+    left: 10px;
+}
+.textInHeder {
+    margin: 12px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.form-container .button{
+    background-image: linear-gradient(to right, #9181F4, #5038ED);
+    padding:  16px 24px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #F0EDFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #fff;
+}
+.after-form span{
+    font-weight: 900;
+}
+.after-form button{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px ;
+    margin-bottom: 15px;
+    border: 1px solid rgba(128, 122, 122, 0.097);
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+.after-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between
+}
+.after-form button p{
+    margin-left: 8px;
+}
+.pafterLogWith{
+    border-top: 1px solid red;
+}
+/*Register Bodx side end*/
+/*Img Box side stat*/
+
+.imgBox{
+    background-image: url('../img/Rectangl.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+}
+.imgBox .box{
+    width: 50%;
+    margin: auto;
+    height: 75%;
+    border-radius: 48px;
+    border: #fff 1px solid;
+    background: hsl(248deg 99.22% 79.79% / 75%);
+    color: #fff;
+    position: relative;
+
+}
+
+.flex .women{
+    position: absolute;
+    height: 100%;
+    right: -155px;
+}
+.flex p{
+    position: absolute;
+    width: 182px;
+    font-size: 32px;
+    top: 40px;
+    left: 30px;
+    font-weight: 700;
+    line-height: 46px;
+}
+.box .star{
+    background-color: #F0EDFF;
+    padding: 18px;
+    width: 65px;
+    border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 65%;
+}
+.text {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.text::before,
+.text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    height: 1px;
+    background-color: rgba(128, 122, 122, 0.097);
+}
+.text::before {
+    left: -1%;
+}
+.text::after {
+    right: -1%;
+}
+/*Img Box side end*/
+@media screen and (max-width: 1000px) {
+    .row{
+        grid-template-columns: 100%;
+        height: 200vh;
+    }
+
+  }
